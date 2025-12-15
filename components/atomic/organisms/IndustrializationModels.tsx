@@ -256,7 +256,7 @@ export function IndustrializationModels() {
       </div>
 
       {/* Vietnam Context Box */}
-      <div className="mt-6 card bg-gradient-to-r from-primary-900/30 to-accent-900/30 border border-primary-600/30">
+      {/* <div className="mt-6 card bg-gradient-to-r from-primary-900/30 to-accent-900/30 border border-primary-600/30">
         <div className="flex items-start gap-3">
           <span className="text-2xl">🇻🇳</span>
           <div>
@@ -270,7 +270,7 @@ export function IndustrializationModels() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

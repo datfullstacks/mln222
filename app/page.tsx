@@ -2,7 +2,7 @@ import { Badge } from '@/components/atomic/atoms/Badge'
 import { Button } from '@/components/atomic/atoms/Button'
 import { Heading, Paragraph } from '@/components/atomic/atoms/Typography'
 import { Callout, ImageWithFallback } from '@/components/atomic/molecules'
-import { IndustrialRevolutionTabs, IndustrializationModels } from '@/components/atomic/organisms'
+import { IndustrialRevolutionTabs, IndustrializationModels, TechDisruptionExplainer } from '@/components/atomic/organisms'
 import { IndexLayout } from '@/components/templates/IndexLayout'
 import Link from 'next/link'
 
@@ -131,6 +131,9 @@ export default function HomePage() {
 
                 {/* Các mô hình công nghiệp hóa tiêu biểu trên thế giới */}
                 <IndustrializationModels />
+
+                {/* Trả lời cho câu hỏi đứt gãy công nghệ là gì */}
+                <TechDisruptionExplainer />
                 
                 {/* Khung lý luận Mác-Lênin */}
                 <Heading level={3} className="mb-6 mt-12">Khung lý luận Mác-Lênin</Heading>
