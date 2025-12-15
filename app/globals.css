@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Light mode (default) */
+  :root {
+    /* Semantic color tokens - Light mode */
+    --color-bg-primary: #FFFFFF;
+    --color-bg-secondary: #F9FAFB;
+    --color-bg-secondary-rgb: 249, 250, 251;
+    --color-bg-tertiary: #F3F4F6;
+    --color-text-primary: #111827;
+    --color-text-secondary: #6B7280;
+    --color-text-muted: #9CA3AF;
+    --color-border: #E5E7EB;
+    --color-border-rgb: 229, 231, 235;
+    
+    /* Callout semantic colors */
+    --color-concept: #2563EB;
+    --color-rupture: #D97706;
+    --color-consequence: #DC2626;
+    --color-regulation: #16A34A;
+  }
+
+  /* Dark mode */
+  .dark {
+    --color-bg-primary: #0B0F14;
+    --color-bg-secondary: #111827;
+    --color-bg-secondary-rgb: 17, 24, 39;
+    --color-bg-tertiary: #0F172A;
+    --color-text-primary: #E5E7EB;
+    --color-text-secondary: #A1A1AA;
+    --color-text-muted: #71717A;
+    --color-border: #243244;
+    --color-border-rgb: 36, 50, 68;
+    
+    /* Callout semantic colors */
+    --color-concept: #60A5FA;
+    --color-rupture: #F59E0B;
+    --color-consequence: #EF4444;
+    --color-regulation: #22C55E;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    @apply antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-surface-1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-text-2;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-primary-600/40 text-text-1;
+  }
+}
+
+@layer components {
+  /* Typography scales */
+  .heading-1 {
+    @apply text-4xl md:text-5xl font-bold tracking-tight;
+  }
+
+  .heading-2 {
+    @apply text-3xl md:text-4xl font-semibold tracking-tight;
+  }
+
+  .heading-3 {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+
+  .heading-4 {
+    @apply text-xl md:text-2xl font-medium;
+  }
+
+  .body-large {
+    @apply text-lg leading-relaxed;
+  }
+
+  .body-base {
+    @apply text-base leading-relaxed;
+  }
+
+  .body-small {
+    @apply text-sm leading-normal;
+  }
+
+  .caption {
+    @apply text-xs text-text-2;
+  }
+
+  /* Link styles */
+  .link-primary {
+    @apply text-primary-400 hover:text-primary-500 underline underline-offset-2 transition-colors;
+  }
+
+  /* Card base */
+  .card {
+    @apply bg-surface-1 border border-border rounded-lg p-6 transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply hover:border-primary-600 hover:shadow-lg hover:shadow-primary-600/10;
+  }
+
+  /* Glass effect */
+  .glass {
+    background-color: rgba(var(--color-bg-secondary-rgb), 0.8);
+    border-color: rgba(var(--color-border-rgb), 0.5);
+    @apply backdrop-blur-md border;
+  }
+}
+
+@layer utilities {
+  /* Gradient text */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-rupture-500;
+  }
+
+  /* Focus ring */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-bg-0;
+  }
+
+  /* Rupture line effect */
+  .rupture-line {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-gradient-to-r after:from-rupture-500 after:to-critical-500;
+  }
+}

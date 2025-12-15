@@ -1,0 +1,43 @@
+{
+  "name": "mln222-dut-gay-cong-nghe",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Phân tích đứt gãy công nghệ từ góc nhìn kinh tế-chính trị Mác-Lênin",
+  "homepage": "https://github.com/datfullstacks/mln222#readme",
+  "bugs": {
+    "url": "https://github.com/datfullstacks/mln222/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datfullstacks/mln222.git"
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "author": "dathtfe",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "clsx": "^2.1.0",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^0.344.0",
+    "next": "^14.2.0",
+    "next-mdx-remote": "^4.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.2.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
+}

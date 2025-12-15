@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="180" height="180" rx="20" fill="#0B0F14"/>
+  
+  <!-- Rupture symbol - zigzag line representing "đứt gãy" -->
+  <path d="M30 90L50 70L70 90L90 60L110 90L130 70L150 90" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Circuit/tech pattern below -->
+  <path d="M40 110H60L70 120H110L120 110H140" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="40" cy="110" r="4" fill="#60A5FA"/>
+  <circle cx="140" cy="110" r="4" fill="#60A5FA"/>
+  <circle cx="90" cy="120" r="4" fill="#22C55E"/>
+  
+  <!-- Decorative dots -->
+  <circle cx="50" cy="140" r="3" fill="#A1A1AA"/>
+  <circle cx="90" cy="140" r="3" fill="#A1A1AA"/>
+  <circle cx="130" cy="140" r="3" fill="#A1A1AA"/>
+</svg>

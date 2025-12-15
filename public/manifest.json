@@ -1,0 +1,16 @@
+{
+  "name": "Đứt gãy Công nghệ",
+  "short_name": "ĐứtGãy",
+  "description": "Phân tích mâu thuẫn công nghệ từ góc nhìn Mác-Lênin",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0F14",
+  "theme_color": "#60A5FA",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

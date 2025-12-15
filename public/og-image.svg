@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0B0F14"/>
+  
+  <!-- Gradient overlay -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#F59E0B;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#EF4444;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grad)"/>
+  
+  <!-- Rupture line -->
+  <path d="M100 315L200 250L350 380L500 200L650 350L800 220L950 380L1100 280" stroke="#F59E0B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  
+  <!-- Title text placeholder area -->
+  <rect x="100" y="200" width="600" height="100" rx="8" fill="#111827" opacity="0.8"/>
+  <text x="120" y="270" font-family="system-ui, sans-serif" font-size="48" font-weight="bold" fill="#E5E7EB">ĐỨT GÃY CÔNG NGHỆ</text>
+  
+  <!-- Subtitle -->
+  <text x="120" y="340" font-family="system-ui, sans-serif" font-size="24" fill="#A1A1AA">Phân tích Mác-Lênin về công nghệ thế kỷ 21</text>
+  
+  <!-- Tech circuit decoration -->
+  <path d="M850 400H950L1000 450H1100" stroke="#60A5FA" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="850" cy="400" r="6" fill="#60A5FA"/>
+  <circle cx="1100" cy="450" r="6" fill="#22C55E"/>
+</svg>
