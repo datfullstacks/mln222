@@ -1,8 +1,8 @@
 import { Badge } from '@/components/atomic/atoms/Badge'
 import { Button } from '@/components/atomic/atoms/Button'
 import { Heading, Paragraph } from '@/components/atomic/atoms/Typography'
-import { Callout, ImageWithFallback } from '@/components/atomic/molecules'
-import { IndustrialRevolutionTabs, IndustrializationModels, TechDisruptionExplainer } from '@/components/atomic/organisms'
+import { Callout } from '@/components/atomic/molecules'
+import { IndustrialRevolutionTabs, IndustrializationModels, TechDisruptionExplainer, VietnamTechArticles } from '@/components/atomic/organisms'
 import { IndexLayout } from '@/components/templates/IndexLayout'
 import Link from 'next/link'
 
@@ -134,7 +134,10 @@ export default function HomePage() {
 
                 {/* Trả lời cho câu hỏi đứt gãy công nghệ là gì */}
                 <TechDisruptionExplainer />
-                
+
+                {/*Đứt gãy công nghệ và cách mạng công nghiệp tại Việt Nam */}
+                <VietnamTechArticles />
+
                 {/* Khung lý luận Mác-Lênin */}
                 <Heading level={3} className="mb-6 mt-12">Khung lý luận Mác-Lênin</Heading>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

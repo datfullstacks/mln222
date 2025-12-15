@@ -29,14 +29,14 @@ const subjectsData: SubjectData[] = [
     bgGradient: 'from-blue-900/50',
     impacts: {
       positive: [
-        'Thúc đẩy lực lượng sản xuất: năng suất lao động tăng, cơ cấu kinh tế chuyển dịch theo hướng hiện đại.',
-        'Tăng năng lực cạnh tranh & hội nhập: tham gia chuỗi giá trị tốt hơn nếu làm chủ công nghệ.',
-        'Đổi mới quản trị phát triển: hình thành chính phủ điện tử, quản trị dựa trên dữ liệu.',
+        '<strong class="text-emerald-400">Thúc đẩy lực lượng sản xuất:</strong> năng suất lao động tăng, cơ cấu kinh tế chuyển dịch theo hướng hiện đại.',
+        '<strong class="text-emerald-400">Tăng năng lực cạnh tranh & hội nhập:</strong> tham gia chuỗi giá trị tốt hơn nếu làm chủ công nghệ.',
+        '<strong class="text-emerald-400">Đổi mới quản trị phát triển:</strong> hình thành chính phủ điện tử, quản trị dựa trên dữ liệu.',
       ],
       negative: [
-        'Đứt gãy công nghệ giữa các quốc gia: nước đi sau dễ tụt lại vì công nghệ thay đổi "nhảy vọt".',
-        'Phụ thuộc công nghệ: nếu chủ yếu nhập máy móc/giải pháp mà không làm chủ lõi → lệ thuộc.',
-        'Áp lực điều chỉnh thể chế: luật, chính sách, quản trị không theo kịp công nghệ → tạo "điểm nghẽn" phát triển.',
+        '<strong class="text-red-400">Đứt gãy công nghệ giữa các quốc gia:</strong> nước đi sau dễ tụt lại vì công nghệ thay đổi "nhảy vọt".',
+        '<strong class="text-red-400">Phụ thuộc công nghệ:</strong> nếu chủ yếu nhập máy móc/giải pháp mà không làm chủ lõi → lệ thuộc.',
+        '<strong class="text-red-400">Áp lực điều chỉnh thể chế:</strong> luật, chính sách, quản trị không theo kịp công nghệ → tạo "điểm nghẽn" phát triển.',
       ],
     },
   },
@@ -49,14 +49,14 @@ const subjectsData: SubjectData[] = [
     bgGradient: 'from-purple-900/50',
     impacts: {
       positive: [
-        'Tăng năng suất, giảm chi phí nhờ tự động hóa, số hóa, quản trị thông minh.',
-        'Tạo mô hình kinh doanh mới: thương mại điện tử, nền tảng số, sản xuất thông minh.',
-        'Nâng chất lượng sản phẩm và chuẩn hóa theo thị trường quốc tế.',
+        '<strong class="text-emerald-400">Tăng năng suất, giảm chi phí</strong> nhờ tự động hóa, số hóa, quản trị thông minh.',
+        '<strong class="text-emerald-400">Tạo mô hình kinh doanh mới:</strong> thương mại điện tử, nền tảng số, sản xuất thông minh.',
+        '<strong class="text-emerald-400">Nâng chất lượng sản phẩm</strong> và chuẩn hóa theo thị trường quốc tế.',
       ],
       negative: [
-        'Khoảng cách lớn–nhỏ nới rộng: doanh nghiệp lớn có vốn – dữ liệu – nhân lực dễ chuyển đổi; SME dễ bị loại khỏi thị trường.',
-        'Rủi ro mất việc trong doanh nghiệp truyền thống do thay máy móc/AI.',
-        'Rủi ro an ninh dữ liệu/công nghệ (đặc biệt khi phụ thuộc nhà cung cấp nền tảng).',
+        '<strong class="text-red-400">Khoảng cách lớn–nhỏ nới rộng:</strong> doanh nghiệp lớn có vốn – dữ liệu – nhân lực dễ chuyển đổi; SME dễ bị loại khỏi thị trường.',
+        '<strong class="text-red-400">Rủi ro mất việc</strong> trong doanh nghiệp truyền thống do thay máy móc/AI.',
+        '<strong class="text-red-400">Rủi ro an ninh dữ liệu/công nghệ</strong> (đặc biệt khi phụ thuộc nhà cung cấp nền tảng).',
       ],
     },
   },
@@ -69,12 +69,12 @@ const subjectsData: SubjectData[] = [
     bgGradient: 'from-teal-900/50',
     impacts: {
       positive: [
-        'Công nghệ số giúp mở rộng tiếp cận dịch vụ: giáo dục online, y tế từ xa, thương mại điện tử, thanh toán số.',
-        'Tạo cơ hội phát triển "vượt bậc" nếu có hạ tầng số và kỹ năng.',
+        '<strong class="text-emerald-400">Mở rộng tiếp cận dịch vụ:</strong> giáo dục online, y tế từ xa, thương mại điện tử, thanh toán số.',
+        '<strong class="text-emerald-400">Tạo cơ hội phát triển "vượt bậc"</strong> nếu có hạ tầng số và kỹ năng.',
       ],
       negative: [
-        'Khoảng cách số: nơi thiếu hạ tầng internet, thiết bị, kỹ năng → bị bỏ lại phía sau.',
-        'Dịch chuyển lao động: vùng chậm đổi mới dễ mất cơ hội việc làm, tăng chênh lệch thu nhập.',
+        '<strong class="text-red-400">Khoảng cách số:</strong> nơi thiếu hạ tầng internet, thiết bị, kỹ năng → bị bỏ lại phía sau.',
+        '<strong class="text-red-400">Dịch chuyển lao động:</strong> vùng chậm đổi mới dễ mất cơ hội việc làm, tăng chênh lệch thu nhập.',
       ],
     },
   },
@@ -87,14 +87,14 @@ const subjectsData: SubjectData[] = [
     bgGradient: 'from-orange-900/50',
     impacts: {
       positive: [
-        'Tạo nghề mới và việc làm mới (CNTT, dữ liệu, tự động hóa, vận hành hệ thống thông minh…).',
-        'Tăng cơ hội nâng kỹ năng – tăng thu nhập cho lao động có trình độ.',
-        'Môi trường làm việc an toàn hơn ở một số ngành (robot thay việc nặng/độc hại).',
+        '<strong class="text-emerald-400">Tạo nghề mới và việc làm mới</strong> (CNTT, dữ liệu, tự động hóa, vận hành hệ thống thông minh…).',
+        '<strong class="text-emerald-400">Tăng cơ hội nâng kỹ năng</strong> – tăng thu nhập cho lao động có trình độ.',
+        '<strong class="text-emerald-400">Môi trường làm việc an toàn hơn</strong> ở một số ngành (robot thay việc nặng/độc hại).',
       ],
       negative: [
-        'Phân hóa lao động: lao động giản đơn dễ bị thay thế; lao động kỹ năng cao hưởng lợi nhiều hơn.',
-        'Áp lực học lại liên tục (reskill/upskill); ai không theo kịp dễ thất nghiệp hoặc làm việc bấp bênh.',
-        'Nguy cơ "mắc kẹt" trong công việc giá rẻ nếu chỉ làm khâu gia công, không lên được khâu giá trị cao.',
+        '<strong class="text-red-400">Phân hóa lao động:</strong> lao động giản đơn dễ bị thay thế; lao động kỹ năng cao hưởng lợi nhiều hơn.',
+        '<strong class="text-red-400">Áp lực học lại liên tục</strong> (reskill/upskill); ai không theo kịp dễ thất nghiệp hoặc làm việc bấp bênh.',
+        '<strong class="text-red-400">Nguy cơ "mắc kẹt"</strong> trong công việc giá rẻ nếu chỉ làm khâu gia công, không lên được khâu giá trị cao.',
       ],
     },
   },
@@ -189,7 +189,7 @@ export function TechDisruptionExplainer() {
               {subject.impacts.positive.map((item, index) => (
                 <li key={index} className="flex gap-3 text-sm">
                   <span className="text-emerald-400 mt-0.5">+</span>
-                  <span className="text-text-2">{item}</span>
+                  <span className="text-text-2" dangerouslySetInnerHTML={{ __html: item }} />
                 </li>
               ))}
             </ul>
@@ -205,7 +205,7 @@ export function TechDisruptionExplainer() {
               {subject.impacts.negative.map((item, index) => (
                 <li key={index} className="flex gap-3 text-sm">
                   <span className="text-red-400 mt-0.5">−</span>
-                  <span className="text-text-2">{item}</span>
+                  <span className="text-text-2" dangerouslySetInnerHTML={{ __html: item }} />
                 </li>
               ))}
             </ul>
@@ -225,6 +225,76 @@ export function TechDisruptionExplainer() {
               ngược lại, những chủ thể thiếu nguồn lực, kỹ năng hoặc thể chế phù hợp sẽ ngày càng bị bỏ lại phía sau. 
               Đây chính là bản chất của <strong className="text-accent-400">"đứt gãy công nghệ"</strong>.
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Conclusion */}
+      <div className="mt-6 card bg-gradient-to-r from-primary-900/40 via-accent-900/30 to-primary-900/40 border-2 border-primary-500/50">
+        <div className="text-center mb-6">
+          <Badge variant="primary" className="mb-3">KẾT LUẬN</Badge>
+          <h4 className="heading-4 text-primary-400">Hướng đi cho công nghiệp hóa thời đại mới</h4>
+        </div>
+
+        <div className="space-y-4">
+          {/* Point 1 */}
+          <div className="flex items-start gap-4 bg-surface-1/50 rounded-lg p-4">
+            <div className="w-10 h-10 rounded-full bg-primary-600 flex items-center justify-center text-white font-bold shrink-0">
+              1
+            </div>
+            <div>
+              <p className="text-text-1 leading-relaxed">
+                <strong className="text-primary-400">Tiến bộ công nghệ (CMCN)</strong> thúc đẩy{' '}
+                <strong>lực lượng sản xuất</strong> mạnh mẽ → là <em>động lực công nghiệp hóa</em>.
+              </p>
+            </div>
+          </div>
+
+          {/* Point 2 */}
+          <div className="flex items-start gap-4 bg-surface-1/50 rounded-lg p-4">
+            <div className="w-10 h-10 rounded-full bg-accent-600 flex items-center justify-center text-white font-bold shrink-0">
+              2
+            </div>
+            <div>
+              <p className="text-text-1 leading-relaxed">
+                Nhưng nó cũng làm <strong className="text-accent-400">phát sinh mâu thuẫn và đứt gãy</strong> nếu{' '}
+                <em>quan hệ sản xuất, thể chế quản trị và chất lượng nguồn nhân lực</em> không kịp điều chỉnh.
+              </p>
+            </div>
+          </div>
+
+          {/* Arrow */}
+          <div className="flex justify-center py-2">
+            <span className="text-3xl text-primary-400">⇓</span>
+          </div>
+
+          {/* Final Conclusion */}
+          <div className="bg-gradient-to-r from-emerald-900/30 to-primary-900/30 border border-emerald-500/50 rounded-lg p-5">
+            <div className="flex items-start gap-4">
+              <span className="text-3xl">🎯</span>
+              <div>
+                <p className="text-text-1 leading-relaxed text-lg">
+                  <strong className="text-emerald-400">Vì vậy</strong>, công nghiệp hóa hiện nay phải gắn với:
+                </p>
+                <ul className="mt-3 space-y-2">
+                  <li className="flex items-center gap-3 text-text-1">
+                    <span className="text-emerald-400">✓</span>
+                    <span><strong>Đổi mới sáng tạo</strong> — làm chủ công nghệ lõi</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-text-1">
+                    <span className="text-emerald-400">✓</span>
+                    <span><strong>Nâng kỹ năng lao động</strong> — reskill/upskill liên tục</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-text-1">
+                    <span className="text-emerald-400">✓</span>
+                    <span><strong>Phát triển bền vững & bao trùm</strong> — không ai bị bỏ lại</span>
+                  </li>
+                </ul>
+                <p className="mt-4 text-accent-400 font-semibold text-center">
+                  → Để thu hẹp đứt gãy công nghệ
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
