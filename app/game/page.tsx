@@ -13,12 +13,24 @@ export const metadata: Metadata = {
 
 const games = [
   {
+    id: 'tech-journey',
+    title: 'Hành Trình Công Nghệ',
+    description: 'Đi qua 4 không gian, đưa ra 4 quyết định. Mỗi lựa chọn sẽ định hình thế giới của bạn. Trải nghiệm 3D tương tác về đứt gãy công nghệ.',
+    badge: '3D Interactive',
+    badgeVariant: 'primary' as const,
+    status: 'available',
+    href: '/game/tech-journey',
+    icon: '🚀',
+  },
+  {
     id: 'chip-crisis',
     title: 'Chip Crisis Simulator',
     description: 'Đóng vai nhà hoạch định chính sách trong cuộc khủng hoảng chip toàn cầu. Bạn sẽ quyết định như thế nào?',
     badge: 'Strategy',
     badgeVariant: 'rupture' as const,
     status: 'coming-soon',
+    href: '#',
+    icon: '🎯',
   },
   {
     id: 'platform-tycoon',
@@ -27,22 +39,18 @@ const games = [
     badge: 'Simulation',
     badgeVariant: 'critical' as const,
     status: 'coming-soon',
+    href: '#',
+    icon: '🏢',
   },
   {
     id: 'tech-war-quiz',
     title: 'Tech War Quiz',
     description: 'Kiểm tra kiến thức về cuộc chiến công nghệ Mỹ-Trung và các sự kiện lịch sử.',
     badge: 'Quiz',
-    badgeVariant: 'primary' as const,
-    status: 'coming-soon',
-  },
-  {
-    id: 'supply-chain',
-    title: 'Supply Chain Challenge',
-    description: 'Quản lý chuỗi cung ứng chip trong bối cảnh địa chính trị phức tạp.',
-    badge: 'Puzzle',
     badgeVariant: 'system' as const,
     status: 'coming-soon',
+    href: '#',
+    icon: '❓',
   },
 ]
 
@@ -74,16 +82,19 @@ export default function GamePage() {
             key={game.id}
             className="card card-hover group relative overflow-hidden"
           >
-            {/* Coming soon overlay */}
-            <div className="absolute inset-0 bg-bg-0/60 backdrop-blur-sm flex items-center justify-center z-10">
-              <Badge variant="default" className="text-lg px-4 py-2">
-                🚧 Coming Soon
-              </Badge>
-            </div>
+            {/* Coming soon overlay - only for coming-soon games */}
+            {game.status === 'coming-soon' && (
+              <div className="absolute inset-0 bg-bg-0/60 backdrop-blur-sm flex items-center justify-center z-10">
+                <Badge variant="default" className="text-lg px-4 py-2">
+                  🚧 Coming Soon
+                </Badge>
+              </div>
+            )}
 
             <div className="relative">
               <div className="flex items-start justify-between mb-4">
                 <Badge variant={game.badgeVariant}>{game.badge}</Badge>
+                <span className="text-3xl">{game.icon}</span>
               </div>
 
               <h3 className="heading-4 mb-2 group-hover:text-primary-400 transition-colors">
@@ -94,9 +105,17 @@ export default function GamePage() {
                 {game.description}
               </Paragraph>
 
-              <Button variant="secondary" disabled className="w-full">
-                Chơi ngay
-              </Button>
+              {game.status === 'available' ? (
+                <Link href={game.href}>
+                  <Button variant="primary" className="w-full">
+                    🎮 Chơi ngay
+                  </Button>
+                </Link>
+              ) : (
+                <Button variant="secondary" disabled className="w-full">
+                  Chơi ngay
+                </Button>
+              )}
             </div>
           </div>
         ))}
