@@ -118,15 +118,15 @@ export function TechDisruptionExplainer() {
           <div>
             <p className="text-text-1 leading-relaxed mb-4">
               <strong className="text-accent-400">Đứt gãy công nghệ</strong> là tình trạng{' '}
-              <em>chênh lệch và/hoặc gián đoạn</em> khả năng tiếp cận – ứng dụng – làm chủ công nghệ 
-              giữa các chủ thể (quốc gia, doanh nghiệp, khu vực đô thị–nông thôn, và nhóm lao động), 
+              <em>chênh lệch và/hoặc gián đoạn</em> khả năng tiếp cận – ứng dụng – làm chủ công nghệ
+              giữa các chủ thể (quốc gia, doanh nghiệp, khu vực đô thị–nông thôn, và nhóm lao động),
               do tốc độ phát triển công nghệ (đặc biệt CMCN 4.0) diễn ra rất nhanh, khiến một bộ phận không theo kịp.
             </p>
             <div className="bg-surface-2 rounded-lg p-4 border-l-4 border-l-primary-500">
               <p className="text-text-2 text-sm">
-                <span className="text-primary-400 font-semibold">Góc nhìn Mác–Lênin:</span> Đây là biểu hiện của 
-                mâu thuẫn giữa trình độ phát triển của <strong className="text-text-1">lực lượng sản xuất</strong> (khoa học–công nghệ, 
-                máy móc, dữ liệu…) với khả năng/điều kiện tiếp nhận của <strong className="text-text-1">quan hệ sản xuất</strong>, 
+                <span className="text-primary-400 font-semibold">Góc nhìn Mác–Lênin:</span> Đây là biểu hiện của
+                mâu thuẫn giữa trình độ phát triển của <strong className="text-text-1">lực lượng sản xuất</strong> (khoa học–công nghệ,
+                máy móc, dữ liệu…) với khả năng/điều kiện tiếp nhận của <strong className="text-text-1">quan hệ sản xuất</strong>,
                 thể chế, nguồn lực và con người.
               </p>
             </div>
@@ -220,9 +220,9 @@ export function TechDisruptionExplainer() {
           <div>
             <h5 className="font-semibold text-primary-400 mb-2">Nhận định tổng hợp</h5>
             <p className="text-text-2 text-sm leading-relaxed">
-              Tiến bộ công nghệ mang lại cơ hội lớn nhưng cũng tạo ra <strong className="text-text-1">sự phân hóa</strong> sâu sắc. 
-              Những chủ thể có khả năng <em>tiếp cận, học hỏi và làm chủ công nghệ</em> sẽ hưởng lợi nhiều; 
-              ngược lại, những chủ thể thiếu nguồn lực, kỹ năng hoặc thể chế phù hợp sẽ ngày càng bị bỏ lại phía sau. 
+              Tiến bộ công nghệ mang lại cơ hội lớn nhưng cũng tạo ra <strong className="text-text-1">sự phân hóa</strong> sâu sắc.
+              Những chủ thể có khả năng <em>tiếp cận, học hỏi và làm chủ công nghệ</em> sẽ hưởng lợi nhiều;
+              ngược lại, những chủ thể thiếu nguồn lực, kỹ năng hoặc thể chế phù hợp sẽ ngày càng bị bỏ lại phía sau.
               Đây chính là bản chất của <strong className="text-accent-400">"đứt gãy công nghệ"</strong>.
             </p>
           </div>
@@ -230,74 +230,9 @@ export function TechDisruptionExplainer() {
       </div>
 
       {/* Conclusion */}
-      <div className="mt-6 card bg-gradient-to-r from-primary-900/40 via-accent-900/30 to-primary-900/40 border-2 border-primary-500/50">
-        <div className="text-center mb-6">
-          <Badge variant="primary" className="mb-3">KẾT LUẬN</Badge>
-          <h4 className="heading-4 text-primary-400">Hướng đi cho công nghiệp hóa thời đại mới</h4>
-        </div>
 
-        <div className="space-y-4">
-          {/* Point 1 */}
-          <div className="flex items-start gap-4 bg-surface-1/50 rounded-lg p-4">
-            <div className="w-10 h-10 rounded-full bg-primary-600 flex items-center justify-center text-white font-bold shrink-0">
-              1
-            </div>
-            <div>
-              <p className="text-text-1 leading-relaxed">
-                <strong className="text-primary-400">Tiến bộ công nghệ (CMCN)</strong> thúc đẩy{' '}
-                <strong>lực lượng sản xuất</strong> mạnh mẽ → là <em>động lực công nghiệp hóa</em>.
-              </p>
-            </div>
-          </div>
 
-          {/* Point 2 */}
-          <div className="flex items-start gap-4 bg-surface-1/50 rounded-lg p-4">
-            <div className="w-10 h-10 rounded-full bg-accent-600 flex items-center justify-center text-white font-bold shrink-0">
-              2
-            </div>
-            <div>
-              <p className="text-text-1 leading-relaxed">
-                Nhưng nó cũng làm <strong className="text-accent-400">phát sinh mâu thuẫn và đứt gãy</strong> nếu{' '}
-                <em>quan hệ sản xuất, thể chế quản trị và chất lượng nguồn nhân lực</em> không kịp điều chỉnh.
-              </p>
-            </div>
-          </div>
 
-          {/* Arrow */}
-          <div className="flex justify-center py-2">
-            <span className="text-3xl text-primary-400">⇓</span>
-          </div>
-
-          {/* Final Conclusion */}
-          <div className="bg-gradient-to-r from-emerald-900/30 to-primary-900/30 border border-emerald-500/50 rounded-lg p-5">
-            <div className="flex items-start gap-4">
-              <span className="text-3xl">🎯</span>
-              <div>
-                <p className="text-text-1 leading-relaxed text-lg">
-                  <strong className="text-emerald-400">Vì vậy</strong>, công nghiệp hóa hiện nay phải gắn với:
-                </p>
-                <ul className="mt-3 space-y-2">
-                  <li className="flex items-center gap-3 text-text-1">
-                    <span className="text-emerald-400">✓</span>
-                    <span><strong>Đổi mới sáng tạo</strong> — làm chủ công nghệ lõi</span>
-                  </li>
-                  <li className="flex items-center gap-3 text-text-1">
-                    <span className="text-emerald-400">✓</span>
-                    <span><strong>Nâng kỹ năng lao động</strong> — reskill/upskill liên tục</span>
-                  </li>
-                  <li className="flex items-center gap-3 text-text-1">
-                    <span className="text-emerald-400">✓</span>
-                    <span><strong>Phát triển bền vững & bao trùm</strong> — không ai bị bỏ lại</span>
-                  </li>
-                </ul>
-                <p className="mt-4 text-accent-400 font-semibold text-center">
-                  → Để thu hẹp đứt gãy công nghệ
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }

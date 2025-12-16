@@ -26,11 +26,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-bold text-gradient mb-3">
-              ĐỨT GÃY CÔNG NGHỆ
-            </h3>
+            <span className="text-xl font-bold text-gradient">
+              Pythagoras
+            </span>
             <p className="text-text-2 text-sm max-w-xs">
-              Phân tích mâu thuẫn giữa lực lượng sản xuất và quan hệ sản xuất 
+              Phân tích mâu thuẫn giữa lực lượng sản xuất và quan hệ sản xuất
               trong kỷ nguyên số từ góc nhìn kinh tế–chính trị Mác–Lênin.
             </p>
           </div>
@@ -58,12 +58,12 @@ export function Footer() {
         <Divider className="my-8" />
 
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-text-2">
-          <p>© 2024 Đứt gãy Công nghệ. Nội dung theo giấy phép CC BY-NC-SA 4.0</p>
-          <p>
+          <p>© 2025 Pythagoras</p>
+          {/* <p>
             Xây dựng bằng{' '}
             <span className="text-primary-400">Next.js</span> +{' '}
             <span className="text-primary-400">TailwindCSS</span>
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>

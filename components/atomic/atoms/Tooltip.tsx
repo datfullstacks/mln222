@@ -30,7 +30,8 @@ export function Tooltip({ content, children, position = 'top' }: TooltipProps) {
         <div
           className={cn(
             'absolute z-50 px-3 py-1.5 text-sm rounded-lg whitespace-nowrap',
-            'bg-surface-1 text-text-1 border border-border shadow-lg',
+            'bg-gray-900 text-white border border-gray-700 shadow-xl',
+            'dark:bg-white dark:text-gray-900 dark:border-gray-200',
             'animate-in fade-in-0 zoom-in-95 duration-150',
             positions[position]
           )}
