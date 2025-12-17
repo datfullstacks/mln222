@@ -30,14 +30,6 @@ export function IndexLayout({ hero, children }: IndexLayoutProps) {
           <p className="body-large text-text-2 max-w-2xl mx-auto mb-8">
             {hero.description}
           </p>
-          
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/game">
-              <Button variant="primary" size="lg" rightIcon={<Icon name="chevron-right" size="sm" />}>
-                Trải nghiệm Game
-              </Button>
-            </Link>
-          </div>
         </div>
       </section>
 

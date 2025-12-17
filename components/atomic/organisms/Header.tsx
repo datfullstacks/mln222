@@ -9,7 +9,6 @@ import { cn } from '@/lib/utils'
 
 const navItems = [
   { label: 'Trang chủ', href: '/' },
-  { label: 'Game', href: '/game' },
   { label: 'AI Usage', href: '/ai-usage' },
   { label: 'About Us', href: '/about' },
 ]

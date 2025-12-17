@@ -168,32 +168,36 @@ export function GameIntro({ onStart, className, sessionInfo, onJoinTeam, isMulti
           <br />Mỗi lựa chọn sẽ định hình thế giới của đội bạn.
         </p>
 
-        {/* Rules Button */}
-        <button
-          onClick={() => setShowRules(true)}
-          className="inline-flex items-center gap-2 px-4 py-2 bg-surface-2/50 border border-border-1 rounded-lg mb-8 hover:border-primary-500/50 transition-colors"
-        >
-          <span>📜</span>
-          <span className="text-text-2 text-sm">Xem luật chơi</span>
-        </button>
+        {/* Rules Button - Ẩn khi lobby */}
+        {!isLobby && (
+          <button
+            onClick={() => setShowRules(true)}
+            className="inline-flex items-center gap-2 px-4 py-2 bg-surface-2/50 border border-border-1 rounded-lg mb-8 hover:border-primary-500/50 transition-colors"
+          >
+            <span>📜</span>
+            <span className="text-text-2 text-sm">Xem luật chơi</span>
+          </button>
+        )}
 
-        {/* Room preview */}
-        <div className="flex justify-center gap-3 mb-8">
-          {rooms.map((room, index) => (
-            <div
-              key={room.id}
-              className="flex flex-col items-center gap-2"
-            >
-              <div 
-                className="w-14 h-14 rounded-xl bg-surface-2 border border-border-1 flex items-center justify-center text-2xl transition-all duration-300 hover:scale-110 hover:border-primary-500/50"
-                style={{ boxShadow: `0 0 20px ${room.ambientColor}20` }}
+        {/* Room preview - Ẩn khi lobby */}
+        {!isLobby && (
+          <div className="flex justify-center gap-3 mb-8">
+            {rooms.map((room, index) => (
+              <div
+                key={room.id}
+                className="flex flex-col items-center gap-2"
               >
-                {room.icon}
+                <div 
+                  className="w-14 h-14 rounded-xl bg-surface-2 border border-border-1 flex items-center justify-center text-2xl transition-all duration-300 hover:scale-110 hover:border-primary-500/50"
+                  style={{ boxShadow: `0 0 20px ${room.ambientColor}20` }}
+                >
+                  {room.icon}
+                </div>
+                <span className="text-xs text-text-3">Phòng {index + 1}</span>
               </div>
-              <span className="text-xs text-text-3">Phòng {index + 1}</span>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
 
         {/* Multiplayer Status Banner */}
         {isMultiplayer && sessionInfo && (
@@ -268,8 +272,8 @@ export function GameIntro({ onStart, className, sessionInfo, onJoinTeam, isMulti
           </div>
         )}
 
-        {/* Team Selection - Ẩn khi đã join */}
-        {!hasJoined && (
+        {/* Team Selection - Ẩn khi lobby hoặc đã join */}
+        {!hasJoined && !isLobby && (
           <div className="bg-surface-1/80 backdrop-blur-md border border-border-1 rounded-2xl p-6 mb-8 max-w-2xl mx-auto">
             <h3 className="text-text-1 font-semibold text-lg mb-4 flex items-center justify-center gap-2">
               <span>👥</span> Chọn Team của bạn
@@ -282,7 +286,7 @@ export function GameIntro({ onStart, className, sessionInfo, onJoinTeam, isMulti
               {teams.map((team) => {
                 const isTaken = isTeamTaken(team.id)
                 const isSelected = selectedTeam?.id === team.id
-                const isDisabled = isTaken || isLobby
+                const isDisabled = isTaken
                 
                 return (
                   <button
